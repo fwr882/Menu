@@ -5,13 +5,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-@RequestMapping("search")
+@RequestMapping("special")
 public class HomeController {
 
-    //request path: search
+    //request path: special
     @RequestMapping(value = "")
     public String index() {
-        return "search/index";
+        return "special/index";
 
     }
 }
