@@ -2,6 +2,7 @@ package com.launchcode.Menu.Controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
@@ -13,5 +14,10 @@ public class HomeController {
     public String index() {
         return "special/index";
 
+    }
+    //request path: form
+    @RequestMapping(value = "form", method=SRequestMethod.GET)
+    public String form(){
+        return "special/form";
     }
 }

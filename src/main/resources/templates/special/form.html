@@ -1,10 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title th:text="${title}">Title</title>
 </head>
 <body>
+<h1 th:text="${title}">Default Title</h1>
+
+<form method="post">
+    Restaurant Name:<br>
+    <input type="text" name="restaurant" /><br>
+    Address:<br>
+    <input type="text" name="address"><br>
+    Zipcode:<br>
+    <input type="text" name="zipcode"><br>
+    Phone Number:<br>
+    <input type="text" name="phone"><br>
+    Description:<br>
+    <input type="text" name="description"><br>
+    Specials:<br>
+    <input type="text" name="specials"><br>
+
+    <input type="submit" value="Finish" />
+</form>
 
 </body>
 </html>
