@@ -16,7 +16,7 @@ public class HomeController {
 
     }
     //request path: form
-    @RequestMapping(value = "form", method=SRequestMethod.GET)
+    @RequestMapping(value = "form", method=RequestMethod.GET)
     public String form(){
         return "special/form";
     }

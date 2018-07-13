@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head th:replace="fragments :: head"></head>
+<body class="container">
+<h1 th:text="${title}">Default Title</h1>
+
+<nav th:replace="fragmens :: navigation"></nav>
+
+<form method="post" th:object="${account}">
+    <div class="form-group">
+        <div>
+            <label th:for="name">Account Name</label>
+            <input class="form-control" th:field="*{name}" />
+            <span th:errors="*{name}" class="error"></span>
+        </div>
+        <div>
+            <label th:for="restaurant name">Restauraunt name</label>
+            <input class="form-control" th:field="*{restauraunt}"
+        </div>
+        <div>
+            <label th:for="email">E-mail</label>
+            <input class="form-control" th:field="*{email}" />
+        </div>
+        <div>
+            <label th:for="password">Password</label>
+            <input class="form-control" th:field="*{password}" />
+        </div>
+        <div>
+            <label th:for="conpassword">Confirm Password</label>
+            <input class="form-control" th:field="*{conpassword}" />
+        </div>
+        <div>
+            <label th:for="zipcode">Zipcode</label>
+            <input class="form-control" th:field="*{zipcode}" />
+        </div>
+        <div>
+            <label th:for="description">Tell Us About Your Place!</label>
+            <input class="form-control" th:field="*{description}" />
+        </div>
+        <div>
+            <label th:for="specials"> What are your specials(You can change this whenever later whenever your inspired!)</label>
+            <input class="form-control" th:field="*{specials" />
+        </div>
+    </div>
+
+
+    <input type="submit" value="Add account" />
+</head>
+
+
+</body>
+</html>
